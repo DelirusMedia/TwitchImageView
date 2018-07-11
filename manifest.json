@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "TwitchImageView",
+  "version": "0.1.0",
+  "description": "Zeigt die Bilder unterhalb des Bilderlinks",
+ 
+  "content_scripts": [{
+   "matches": ["*://*.twitch.tv/*"],
+   "js": ["twimg.js"],
+   "run_at": "document_end"
+  }]
+ 
+}
